@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	font-family:Poppins, sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+	background-color: #1F1D36;
+}
+
+
+.cnt__header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: blueviolet;
+	position: fixed;   
+	overflow: hidden;  
+	width: 100%; 
+	top: 0rem;
+}
+
+.Logo{
+	font-size: 4rem;
+	color: white;
+}
+
+ul{
+	display: flex;
+	font-size: 2.1rem;
+	list-style: none;
+}
+
+/* ________________________ */
+.cnt__main{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	width: 100%;
+	margin-top: 17rem;
+
+}
+
+.Contact{
+	color: white;
+	font-size: 4rem;
+	font-weight: 600;
+	
+}
+form{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 60%;
+
+}
+
+.button{
+	border: none;
+	border-radius: 2rem;
+	padding: 2rem 3rem;
+	font-size: 2rem;
+	background-color: blueviolet;
+	color: white;
+	margin-top: 5rem;
+}
+.button:hover{
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+	transition: transform 330ms ease-in-out;
+}
+
+.style__form{
+	padding: 1.7rem;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	
+}
+/* ________________________ */
+
+.link{
+	color: white;
+	text-decoration: none;
+	padding: 0 3rem;
+}
+
+.link:hover{
+	color: #E9A6A6;
+}
+
+.about__title{
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: white;
+}
+
+.cnt__footer .footer__content{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 8rem 0rem;
+}
+
+footer{
+	margin-top: 17rem;
+	background-color: #151420;
+}
+
+
+.about__links{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: white;
+}
+
+.about__links a, .copyright{
+	color: white;
+	font-size: 1.7rem;
+	font-weight: 200;
+	list-style: none;
+	text-decoration: none;
+	justify-content: center;
+}
+
+.about__links a:hover{
+	color: thistle;
+}
+
+.AboutUs{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	margin-top: 5rem;
+}
+
+@media(max-width: 425px){
+	.about__links a, .copyright{
+		color: white;
+		font-size: 1rem;
+		font-weight: 200;
+		list-style: none;
+		text-decoration: none;
+		justify-content: center;
+	}
+	.about__title{
+		font-size: 1.2rem;
+		font-weight: 500;
+		color: white;
+	}
+
+}
+
