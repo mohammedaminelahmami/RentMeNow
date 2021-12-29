@@ -57,13 +57,12 @@ form{
 	flex-wrap: wrap;
 	flex-direction: column;
 	width: 60%;
-
 }
 
 .button{
 	border: none;
-	border-radius: 2rem;
-	padding: 2rem 3rem;
+	border-radius: 0.6rem;
+	padding: 1.8rem 2.8rem;
 	font-size: 2rem;
 	background-color: blueviolet;
 	color: white;

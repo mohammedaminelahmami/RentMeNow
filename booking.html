@@ -18,17 +18,70 @@
 				<li><a href="Gallery.html" class="link">Gallery</a></li>
 				<li><a href="booking.html" class="link">Booking</a></li>
 				<li><a href="contact.html" class="link">Contact</a></li>
-
 			</ul>
 		</nav>
 	</header>
 	<main class="cnt__main">
-		<section class="sect1">
-			
-		</section>
-		<section class="sect2">
-			
-		</section>
+		<p class="reserve">Reserve Now</p>
+		
+		<select onchange="f__sel()" id="select">
+			<option id="slect__type" value="select__type">Select Type</option>
+			<option id="moto" value="moto">Moto</option>
+			<option id="compact" value="compact">compact</option>
+			<option id="citadine" value="citadine">citadine</option>
+			<option id="utilitaire" value="utilitaire">utilitaire</option>
+			<option id="sedan__berlin" value="sedan__berlin">sedan/berlin</option>
+			<option id="camion" value="camion">camion</option>
+			<option id="engin" value="engin">engin de chantier</option>
+		</select>
+		<br><br>
+		<form>
+			<p class="fuel">Select your gear box type : </p>
+			<div>
+				<input type="radio" id="Manual" name="drone" value="Manual">
+				<label for="Manual" class="fuel">Manual</label>
+			  </div>
+			  
+			  <div>
+				<input type="radio" id="Automatique" name="drone" value="Automatique">
+				<label for="Automatique" class="fuel">Automatique</label>
+			  </div>		
+	
+		</form>
+		<br><br>
+
+		<form>
+			<p class="fuel">Select your fuel type : </p>
+			<div>
+				<input type="radio" id="Essence" name="drone" value="Essence">
+				<label for="Essence" class="fuel">Essence</label>
+			  </div>
+			  
+			  <div>
+				<input type="radio" id="Diesel" name="drone" value="Diesel">
+				<label for="Diesel" class="fuel">Diesel</label>
+			  </div>
+			  
+			  <div>
+				<input type="radio" id="Electrique" name="drone" value="Electrique">
+				<label for="Electrique" class="fuel">Electrique</label>
+			  </div>
+
+			  <div>
+				<input type="radio" id="Hybride" name="drone" value="Hybride">
+				<label for="Hybride" class="fuel">Hybride</label>
+			  </div>
+	
+		</form>
+		<br><br>
+
+		<div>
+			<label for="duration" class="fuel">Duration : </label>
+			<input type="number" id="duration" value="duration">
+		</div>
+
+		<input onclick="total()" type="button" id="button" class="button" value = "Submit">
+		
 	</main>
 	<footer class="cnt__footer">
 		<div class="footer__content">
@@ -63,5 +116,6 @@
 		<center><p class="copyright">Copyright © 2021 RentMeNow. All rights reserved.</p></center>
 	</footer>
 
+<script src="booking.js"></script>
 </body>
 </html>

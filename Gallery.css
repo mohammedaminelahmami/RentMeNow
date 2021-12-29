@@ -22,10 +22,6 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	background-color: blueviolet;
-	position: fixed;   
-	overflow: hidden;  
-	width: 100%;  
-	top: 0rem;
 }
 
 .Logo{
@@ -50,7 +46,7 @@ ul{
 }
 
 .about__title{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 500;
 	color: white;
 }
@@ -59,6 +55,7 @@ ul{
 	display: flex;
 	justify-content: space-evenly;
 	margin: 8rem 0rem;
+	flex-wrap: wrap;
 }
 
 .about__links{
@@ -70,7 +67,7 @@ ul{
 
 .about__links a, .copyright{
 	color: white;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: 200;
 	list-style: none;
 	text-decoration: none;
@@ -85,4 +82,31 @@ ul{
 	display: flex;
 	flex-direction: column;
     align-items: center;
+}
+
+.cnt__1, .cnt__2{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.imgs{
+	width: 35rem;
+}
+
+.imgs:hover{
+	width: 36rem;
+	transform: scale(1.1);
+	transition: transform 330ms ease-in-out;	
+}
+
+
+.Gallery{
+	color: white;
+	font-size: 5rem;
+	font-weight: 500;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+	background-color: #1F1D36;
 }

@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+
 }
 
 html{
@@ -11,10 +12,6 @@ html{
 body{
 	overflow-x: hidden;
 	background-color: #1F1D36;
-}
-
-.cnt__main{
-	width: 100%;
 }
 
 .cnt__header{
@@ -39,6 +36,59 @@ ul{
 	list-style: none;
 }
 
+/* ________________________ */
+
+.cnt__main{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 15rem;
+}
+
+select{
+	width: 25%;
+}
+
+form{
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.fuel{
+	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.reserve{
+	color: white;
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 5rem;
+}
+
+.button{
+	border: none;
+	border-radius: 0.6rem;
+	padding: 1.8rem 2.8rem;
+	font-size: 2rem;
+	background-color: blueviolet;
+	color: white;
+	margin-top: 5rem;
+}
+.button:hover{
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+	transition: transform 330ms ease-in-out;
+}
+
+
+/* ________________________ */
+
+
 .link{
 	color: white;
 	text-decoration: none;
@@ -50,7 +100,7 @@ ul{
 }
 
 .about__title{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 500;
 	color: white;
 }
@@ -70,7 +120,7 @@ ul{
 
 .about__links a, .copyright{
 	color: white;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: 200;
 	list-style: none;
 	text-decoration: none;
@@ -86,3 +136,4 @@ ul{
 	flex-direction: column;
     align-items: center;
 }
+
