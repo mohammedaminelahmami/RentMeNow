@@ -48,6 +48,7 @@ ul{
 
 select{
 	width: 25%;
+	padding: 6px;
 }
 
 form{
@@ -84,6 +85,8 @@ form{
 	transform: scale(1.1);
 	transition: transform 330ms ease-in-out;
 }
+
+
 
 
 /* ________________________ */
