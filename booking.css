@@ -20,7 +20,6 @@ body{
 	align-items: center;
 	background-color: blueviolet;
 	position: fixed;   
-	overflow: hidden;  
 	width: 100%;  
 	top: 0rem;
 }
@@ -28,6 +27,18 @@ body{
 .Logo{
 	font-size: 4rem;
 	color: white;
+}
+.hmb__menu{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.hmb__menu:focus{
+	outline: none;
 }
 
 ul{
@@ -43,6 +54,7 @@ ul{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	flex-wrap: wrap;
 	margin-top: 15rem;
 }
 
@@ -55,10 +67,16 @@ form{
 	display: flex;
 	align-items: center;
 	gap: 3rem;
+	flex-wrap: wrap;
 }
 
 .fuel{
 	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.select__x{
+	color: mistyrose;
 	font-size: 2rem;
 	font-weight: 600;
 }
@@ -85,9 +103,6 @@ form{
 	transform: scale(1.1);
 	transition: transform 330ms ease-in-out;
 }
-
-
-
 
 /* ________________________ */
 
@@ -140,3 +155,47 @@ form{
     align-items: center;
 }
 
+@media(max-width: 768px){
+	html{
+		font-size: 55%;
+	}
+	.cnt__main{
+		overflow-x: hidden;
+	}
+	select{
+		width: 40%;
+		margin: 0 auto;
+	}
+	.hmb__menu{
+		display: block;
+		width: 100%;
+	}
+
+	.my__nav{
+		display: none;
+	}
+
+	.my__nav.show{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 0%;
+		background-color: blueviolet;
+	}
+}
+
+@media(max-width: 630px){
+	form{
+		display: flex;
+		flex-direction: column;
+	}
+	.footer__content{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	
+}

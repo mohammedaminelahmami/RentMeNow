@@ -13,8 +13,10 @@ body{
 	background-color: #1F1D36;
 }
 
+
 .cnt__main{
 	width: 100%;
+	flex-wrap: wrap;
 }
 
 .cnt__header{
@@ -23,7 +25,6 @@ body{
 	align-items: center;
 	background-color: blueviolet;
 	position: fixed;   
-	overflow: hidden;  
 	width: 100%;  
 }
 
@@ -31,6 +32,20 @@ body{
 	font-size: 4rem;
 	color: white;
 }
+
+.hmb__menu{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.hmb__menu:focus{
+	outline: none;
+}
+
 
 ul{
 	display: flex;
@@ -247,6 +262,27 @@ ul{
 	html{
 		font-size: 55%;
 	}
+
+	.hmb__menu{
+		display: block;
+		width: 100%;
+	}
+
+	.my__nav{
+		display: none;
+	}
+
+	.my__nav.show{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 0%;
+		background-color: blueviolet;
+	}
+
 	.cnt__parent1{
 		width: 100%;
 		display: flex;
@@ -265,7 +301,6 @@ ul{
 		font-weight: 700;
 		margin-left: 12rem;
 	}
-
 }
 
 @media(max-width: 664px){
@@ -293,9 +328,20 @@ ul{
 		justify-content: center;
 		margin-top: 6rem;
 	}
+	.p__home{
+		text-align: center;
+	}
+	.footer__content{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 }
 
 @media (max-width: 425px){
+	.why__rentmenow{
+		margin: 0;
+	}
 	.cnt__img1{
 		display: flex;
 		justify-content: flex-start;
@@ -333,6 +379,5 @@ ul{
 		font-size: 2rem;
 		font-weight: 600;
 	}
-	
 	
 }

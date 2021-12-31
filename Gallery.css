@@ -22,11 +22,26 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	background-color: blueviolet;
+	position: fixed;   
+	width: 100%; 
+	top: 0rem;
 }
 
 .Logo{
 	font-size: 4rem;
 	color: white;
+}
+.hmb__menu{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.hmb__menu:focus{
+	outline: none;
 }
 
 ul{
@@ -55,7 +70,6 @@ ul{
 	display: flex;
 	justify-content: space-evenly;
 	margin: 8rem 0rem;
-	flex-wrap: wrap;
 }
 
 .about__links{
@@ -87,8 +101,6 @@ ul{
 .cnt__1, .cnt__2{
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
-
 }
 
 .imgs{
@@ -109,4 +121,40 @@ ul{
 	margin-top: 10rem;
 	margin-bottom: 5rem;
 	background-color: #1F1D36;
+}
+
+@media(max-width: 768px){
+	html{
+		font-size: 55%;
+	}
+	.hmb__menu{
+		display: block;
+		width: 100%;
+	}
+
+	.my__nav{
+		display: none;
+	}
+
+	.my__nav.show{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 0%;
+		background-color: blueviolet;
+	}
+	.footer__content{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.cnt__1, .cnt__2{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
 }

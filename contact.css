@@ -20,7 +20,6 @@ body{
 	align-items: center;
 	background-color: blueviolet;
 	position: fixed;   
-	overflow: hidden;  
 	width: 100%; 
 	top: 0rem;
 }
@@ -28,6 +27,18 @@ body{
 .Logo{
 	font-size: 4rem;
 	color: white;
+}
+.hmb__menu{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.hmb__menu:focus{
+	outline: none;
 }
 
 ul{
@@ -42,6 +53,7 @@ ul{
 	flex-direction:column;
 	align-items: center;
 	width: 100%;
+	flex-wrap: wrap;
 	margin-top: 17rem;
 
 }
@@ -139,20 +151,44 @@ footer{
 	margin-top: 5rem;
 }
 
-@media(max-width: 425px){
-	.about__links a, .copyright{
-		color: white;
-		font-size: 1rem;
-		font-weight: 200;
-		list-style: none;
-		text-decoration: none;
-		justify-content: center;
+@media(max-width: 768px){
+	html{
+		font-size: 55%;
 	}
-	.about__title{
-		font-size: 1.2rem;
-		font-weight: 500;
-		color: white;
+	.hmb__menu{
+		display: block;
+		width: 100%;
+	}
+	.about__links , .copyright{
+		text-align: center;
 	}
 
+	.my__nav{
+		display: none;
+	}
+
+	.my__nav.show{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 0%;
+		background-color: blueviolet;
+	}
+	.footer__content{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+@media(max-width : 430px){
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 80%;
+	}
 }
 
