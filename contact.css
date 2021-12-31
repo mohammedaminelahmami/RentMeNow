@@ -105,6 +105,10 @@ form{
 .link:hover{
 	color: #E9A6A6;
 }
+.link__logo{
+	color: white;
+	text-decoration: none;
+}
 
 .about__title{
 	font-size: 2.5rem;

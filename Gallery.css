@@ -56,6 +56,11 @@ ul{
 	padding: 0 3rem;
 }
 
+.link__logo{
+	color: white;
+	text-decoration: none;
+}
+
 .link:hover{
 	color: #E9A6A6;
 }
