@@ -113,8 +113,7 @@ ul{
 }
 
 .imgs:hover{
-	width: 36rem;
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: transform 330ms ease-in-out;	
 }
 
@@ -127,7 +126,9 @@ ul{
 	margin-bottom: 5rem;
 	background-color: #1F1D36;
 }
-
+.img__car {
+	overflow: hidden;
+}
 @media(max-width: 768px){
 	html{
 		font-size: 55%;

@@ -136,16 +136,6 @@ function total(){
 
 	}
 
-	sum = ((tarif * fuel) +  (tarif * gear__box) + tarif)*dur.value;
+	sum = ((tarif * fuel) + (tarif * gear__box) + tarif)*dur.value;
 	alert(sum);
 }
-
-
-
-
-
-
-
-
-
-
