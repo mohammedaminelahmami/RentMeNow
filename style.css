@@ -46,7 +46,6 @@ body{
 	outline: none;
 }
 
-
 ul{
 	display: flex;
 	font-size: 2.1rem;
@@ -310,6 +309,9 @@ ul{
 		margin-top: 9rem;
 	}
 
+	.why__rentmenow{
+		text-align: center;
+	}
 }
 
 @media(max-width: 664px){
@@ -344,6 +346,9 @@ ul{
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+	}
+	.lorem{
+		text-align: center;
 	}
 }
 
@@ -388,5 +393,4 @@ ul{
 		font-size: 2rem;
 		font-weight: 600;
 	}
-	
 }
