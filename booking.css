@@ -22,6 +22,7 @@ body{
 	position: fixed;   
 	width: 100%;  
 	top: 0rem;
+	z-index: 99999;
 }
 
 .Logo{
@@ -96,12 +97,12 @@ form{
 	background-color: blueviolet;
 	color: white;
 	margin-top: 5rem;
+	transition: transform 330ms ease-in-out;
 }
 .button:hover{
 	background-color: white;
 	color: black;
 	transform: scale(1.1);
-	transition: transform 330ms ease-in-out;
 }
 
 /* ________________________ */

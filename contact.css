@@ -79,12 +79,12 @@ form{
 	background-color: blueviolet;
 	color: white;
 	margin-top: 5rem;
+	transition: transform 330ms ease-in-out;
 }
 .button:hover{
 	background-color: white;
 	color: black;
 	transform: scale(1.1);
-	transition: transform 330ms ease-in-out;
 }
 
 .style__form{

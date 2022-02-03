@@ -13,7 +13,6 @@ body{
 	background-color: #1F1D36;
 }
 
-
 .cnt__main{
 	width: 100%;
 	flex-wrap: wrap;
@@ -26,6 +25,7 @@ body{
 	background-color: blueviolet;
 	position: fixed;   
 	width: 100%;  
+	z-index: 99999;
 }
 
 .Logo{
@@ -100,14 +100,27 @@ ul{
 	font-size: 2rem;
 	background-color: blueviolet;
 	color: white;
+	transition: transform 330ms ease-in-out;
+}
+.button__p1:hover{
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+
 }
 .button__p2{
 	border: none;
 	border-radius: 0.6rem;
 	padding: 1.8rem 2.8rem;
 	font-size: 2rem;
+	transition: transform 330ms ease-in-out;
 }
 
+.button__p2:hover{
+	background-color: blueviolet;
+	color: white;
+	transform: scale(1.1);
+}
 .button__readmore{
 	border: none;
 	border-radius: 0.6rem;
@@ -116,25 +129,12 @@ ul{
 	background-color: blueviolet;
 	color: white;
 	margin-top: 5rem;
-}
-.button__p1:hover{
-	background-color: white;
-	color: black;
-	transform: scale(1.1);
 	transition: transform 330ms ease-in-out;
-
 }
 .button__readmore:hover{
 	background-color: white;
 	color: black;
 	transform: scale(1.1);
-	transition: transform 330ms ease-in-out;
-}
-.button__p2:hover{
-	background-color: blueviolet;
-	color: white;
-	transform: scale(1.1);
-	transition: transform 330ms ease-in-out;
 }
 
 .button__p1__parent{
@@ -263,6 +263,14 @@ ul{
 		font-size: 60%;
 	}
 }
+
+@media(max-width: 1168px){
+	.why__rentmenow{
+		display: block;
+		margin-top: 4rem;
+	}
+}
+
 @media (max-width: 768px){
 	html{
 		font-size: 55%;
@@ -301,11 +309,7 @@ ul{
 		width: 50rem;
 		margin-top: 9rem;
 	}
-	.why__rentmenow{
-		font-size: 4rem;
-		font-weight: 700;
-		margin-left: 12rem;
-	}
+
 }
 
 @media(max-width: 664px){

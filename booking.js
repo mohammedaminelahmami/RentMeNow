@@ -3,7 +3,7 @@
 var tarif;
 var gear__box = 0;
 var fuel = 0;
-var dur = document.getElementById("duration")
+var dur = document.getElementById("duration");
 var sum;
 
 // ------------------- Functions ------------------- \\
@@ -12,7 +12,6 @@ function f__sel(){
 	let mylist = document.getElementById("select");
 	let result = mylist.options[mylist.selectedIndex].text;
 
-	
 	if(result == 'Moto'){
 		tarif = 10;
 		document.getElementById("Manual").disabled = true;
@@ -114,14 +113,13 @@ function total(){
 		gear__box = 0.19;
 	}else{
 		gear__box = 0;
-
+		
 	}
 
 	// ------ \\
 
 	if(document.getElementById("Essence").checked === true){
 		fuel = 0.14;
-
 
 	}else if(document.getElementById("Diesel").checked === true){
 		fuel = 0.21;
@@ -137,5 +135,6 @@ function total(){
 	}
 
 	sum = ((tarif * fuel) + (tarif * gear__box) + tarif)*dur.value;
+	
 	alert(sum);
 }
